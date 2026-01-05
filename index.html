@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Now You Know What To Say — Motsac</title>
+  <meta name="description" content="Chrome extension to avoid saying the wrong thing">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    section {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+    h1, h2 {
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 0.6em;
+    }
+    h1 {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 2em;
+    }
+    p, li {
+      font-size: 1.05rem;
+      margin-bottom: 0.8em;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    .buttons a {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 6px 8px 0 0;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .primary { background:#000; color:#fff; }
+    .secondary { background:#eee; color:#000; }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .columns div {
+      flex: 1 1 220px;
+      background: #f8f8f8;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .usecases div {
+      background:#f8f8f8;
+      padding:12px 16px;
+      border-radius:6px;
+      margin-bottom:10px;
+    }
+    small { display:block; margin-top:10px; color:#555; }
+    .channels {
+      margin-top:14px;
+      display:flex;
+      gap:14px;
+      font-size:0.95rem;
+    }
+    .channels a {
+      text-decoration:none;
+      color:#111;
+      opacity:0.7;
+    }
+    .channels a:hover { opacity:1; }
+  </style>
+</head>
+<body>
+
+  <section id="hero">
+    <h1>Now you know WHAT TO SAY</h1>
+    <p>Chrome extension to avoid saying the wrong thing</p>
+    <div class="buttons">
+      <a href="#" class="primary">Install for Chrome</a>
+      <a href="#examples" class="secondary">See examples</a>
+    </div>
+    <div class="channels">
+      <span>Currently available for <a href="/telegram/" aria-label="Telegram">Telegram</a></span>
+    </div>
+  </section>
+
+  <section id="problem">
+    <h2>Not sure what to say?</h2>
+    <ul>
+      <li>You want to sound clear — but fear being misunderstood.</li>
+      <li>You wonder what they actually meant — but don’t want to ask directly.</li>
+      <li>You feel something’s off — yet can’t name it.</li>
+    </ul>
+  </section>
+
+  <section id="solution">
+    <h2>Motsac solves this</h2>
+    <div class="columns">
+      <div><b>Intent</b><br>Understand what they truly want.</div>
+      <div><b>Tone</b><br>See how your words feel to others.</div>
+      <div><b>Clarity</b><br>Find the phrase that says it right.</div>
+    </div>
+  </section>
+
+  <section id="examples">
+    <h2>Works in your chats</h2>
+    <div class="usecases">
+      <div><b>Telegram</b> — detects emotional distance or hidden interest.</div>
+      <div><b>LinkedIn</b> — shows confidence or hesitation in replies.</div>
+      <div><b>Gmail</b> — helps balance tone between formal and friendly.</div>
+    </div>
+  </section>
+
+    <section id="thoughts">
+    <h2>Your thoughts</h2>
+    <div class="usecases">
+
+      <div><b>І цей бот буде мені казати що писати?</b><br>
+      Він показує найкращий підхід для контакту, а рішення за тобою.</div>
+
+      <div><b>Це як Grammarly, але для чатів?</b><br>
+      Так. Як Grammarly, але для аналізу розмови.</div>
+
+      <div><b>А він точно не читає особисті переписки?</b><br>
+      Читає лише ті повідомлення, які ти сам обереш і відредагуєш.</div>
+
+      <div><b>Навіщо це взагалі? Я і так нормально пишу.</b><br>
+      Motsac для тих, хто вижимає максимум, а не «і так нормально».</div>
+
+      <div><b>Тобто він показує як інші сприймають мої слова?</b><br>
+      Так. Він показує враження, яке справляє твій текст, а не лише те, що ти мав на увазі.</div>
+
+      <div><b>А може підказати як відповісти краще?</b><br>
+      Саме для цього і створений — щоб побачити варіанти до того, як ти натиснеш “Send”.</div>
+
+      <div><b>А працює в Telegram / LinkedIn / Gmail?</b><br>
+      Telegram — вже працює. LinkedIn і Gmail — будуть наступними.<br>
+      <em>Проголосуй за месенджер, який хочеш наступним.</em></div>
+
+      <div><b>Хмм, він реально вгадує емоції?</b><br>
+      Він не вгадує. Він показує емоційні сигнали, які є між слів.</div>
+
+      <div><b>І може показати що хоче протилежна сторона?</b><br>
+      Так. Люди часто пишуть одне, а мають на увазі інше. Motsac допомагає це побачити.</div>
+
+      <div><b>Ого, то я можу прогнозувати відповідь?</b><br>
+      Так. Ще й зможеш впливати на неї.</div>
+
+    </div>
+  </section>
+
+    <section id="control">
+    <h2>Before you send</h2>
+    <p>
+      See the reaction.<br>
+      Understand the intent.<br>
+      Influence the outcome.
+    </p>
+    <div class="buttons">
+      <a href="#" class="primary">Install for Chrome</a>
+    </div>
+  </section>
+
+</body>
+</html>
