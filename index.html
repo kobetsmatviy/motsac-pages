@@ -5,81 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Now You Know What To Say — Motsac</title>
   <meta name="description" content="Chrome extension to avoid saying the wrong thing">
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      line-height: 1.6;
-      color: #111;
-      background: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    section {
-      max-width: 800px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
-    h1, h2 {
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 0.6em;
-    }
-    h1 {
-      font-size: 2.4rem;
-      text-transform: uppercase;
-    }
-    h2 {
-      font-size: 1.6rem;
-      margin-top: 2em;
-    }
-    p, li {
-      font-size: 1.05rem;
-      margin-bottom: 0.8em;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-    .buttons a {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 6px 8px 0 0;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .primary { background:#000; color:#fff; }
-    .secondary { background:#eee; color:#000; }
-    .columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .columns div {
-      flex: 1 1 220px;
-      background: #f8f8f8;
-      padding: 15px;
-      border-radius: 8px;
-    }
-    .usecases div {
-      background:#f8f8f8;
-      padding:12px 16px;
-      border-radius:6px;
-      margin-bottom:10px;
-    }
-    small { display:block; margin-top:10px; color:#555; }
-    .channels {
-      margin-top:14px;
-      display:flex;
-      gap:14px;
-      font-size:0.95rem;
-    }
-    .channels a {
-      text-decoration:none;
-      color:#111;
-      opacity:0.7;
-    }
-    .channels a:hover { opacity:1; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -122,7 +48,7 @@
     </div>
   </section>
 
-    <section id="thoughts">
+  <section id="thoughts">
     <h2>Your thoughts</h2>
     <div class="usecases">
 
@@ -160,7 +86,7 @@
     </div>
   </section>
 
-    <section id="control">
+  <section id="control">
     <h2>Before you send</h2>
     <p>
       See the reaction.<br>
