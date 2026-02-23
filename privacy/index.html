@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy — Motsac</title>
-  <meta name="description" content="Privacy policy for Motsac Chrome extension">
+  <title>Privacy Policy — Motsac</title>
+  <meta name="description" content="Privacy policy for Motsac Chrome extension and website. GDPR and CCPA compliant.">
   <link rel="stylesheet" href="../styles.css?v=15">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-V90RZD0FSQ"></script>
@@ -12,9 +12,18 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-V90RZD0FSQ');
   </script>
+  <style>
+    .policy-section { margin-bottom: 2.5em; }
+    .policy-section h2 { margin-top: 1.8em; margin-bottom: 0.5em; }
+    .policy-section h3 { font-size: 1.1rem; margin-top: 1.2em; margin-bottom: 0.4em; }
+    .toc { background:#f8f8f8; padding:1em 1.5em; border-radius:8px; margin:1.5em 0; }
+    .toc ul { margin:0.3em 0; }
+    .toc a { color:#111; text-decoration:none; }
+    .toc a:hover { text-decoration:underline; }
+    .version-block { color:#555; font-size:0.9rem; margin-top:0.5em; }
+  </style>
 </head>
 <body>
 
@@ -30,38 +39,187 @@
 
   <main>
   <section id="hero">
-    <h1>Privacy</h1>
-    <p>How Motsac handles your data.</p>
+    <h1>Privacy Policy</h1>
+    <p>How Motsac collects, uses, and protects your data. This policy applies to the Motsac website and the Motsac Chrome extension (including its integration with Telegram).</p>
+    <p class="version-block"><strong>Version:</strong> 1.1 &middot; <strong>Effective date:</strong> 23 February 2026 &middot; <strong>Document ID:</strong> motsac-privacy-v1.1</p>
   </section>
 
-  <section id="key-statements">
-    <h2>Key statements</h2>
-    <div class="usecases">
-      <div><b>Reads only messages you explicitly select</b><br>
-      Motsac analyzes only the messages you highlight or select. Nothing else.</div>
-
-      <div><b>No background scraping</b><br>
-      We don't read your chats in the background. No automatic scanning.</div>
-
-      <div><b>No auto-sending</b><br>
-      Nothing is sent automatically. You review every suggestion and decide what to send.</div>
-
-      <div><b>No full chat storage</b><br>
-      We don't store your entire chat history. Only the messages you select for analysis are processed.</div>
-
-      <div><b>No access without user action</b><br>
-      Motsac only works when you actively select a message. No passive monitoring.</div>
+  <section id="toc">
+    <h2>Table of contents</h2>
+    <div class="toc">
+      <ul>
+        <li><a href="#intro">1. Introduction</a></li>
+        <li><a href="#definitions">2. Definitions</a></li>
+        <li><a href="#data-we-collect">3. Data we collect</a></li>
+        <li><a href="#data-we-do-not-collect">4. Data we do not collect</a></li>
+        <li><a href="#purpose-legal-basis">5. Purpose and legal basis</a></li>
+        <li><a href="#retention">6. Data retention</a></li>
+        <li><a href="#third-party">7. Third-party processing</a></li>
+        <li><a href="#international">8. International transfers</a></li>
+        <li><a href="#user-rights">9. User rights</a></li>
+        <li><a href="#deletion-procedure">10. Data deletion procedure</a></li>
+        <li><a href="#security">11. Security measures</a></li>
+        <li><a href="#children">12. Children's privacy</a></li>
+        <li><a href="#changes">13. Changes to this policy</a></li>
+        <li><a href="#contact">14. Contact information</a></li>
+      </ul>
     </div>
   </section>
 
-  <section id="control">
-    <h2>You stay in control</h2>
-    <p>Every step requires your action. You choose what to analyze, you review suggestions, and you decide what to send.</p>
+  <section id="intro" class="policy-section">
+    <h2>1. Introduction</h2>
+    <p>Motsac ("we", "us", "our") is a Chrome extension and associated website that integrates with Telegram. It allows users to analyze and edit selected Telegram messages via an AI service. The extension only processes messages explicitly selected by the user; nothing is sent without explicit user action.</p>
+    <p>This Privacy Policy describes how we collect, use, store, and protect personal data in relation to (a) the Motsac website and (b) the Motsac Chrome extension and Telegram bot. It complies with the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA) as applicable, and general privacy standards.</p>
   </section>
 
-  <section id="questions">
-    <h2>Questions?</h2>
-    <p>If you have privacy concerns or questions, please <a href="/contact/">contact us</a>.</p>
+  <section id="definitions" class="policy-section">
+    <h2>2. Definitions</h2>
+    <ul>
+      <li><strong>Personal data</strong> — Any information relating to an identified or identifiable natural person (e.g. identifiers, content you provide, technical data).</li>
+      <li><strong>Processing</strong> — Any operation performed on personal data (e.g. collection, storage, use, transmission, deletion).</li>
+      <li><strong>Controller</strong> — The entity that determines the purposes and means of processing (here: Motsac, the operator of the service).</li>
+      <li><strong>Processor</strong> — An entity that processes personal data on behalf of the controller (e.g. hosting or AI API providers).</li>
+      <li><strong>User</strong> — Any individual who uses the Motsac website, Chrome extension, or Telegram bot.</li>
+    </ul>
+  </section>
+
+  <section id="data-we-collect" class="policy-section">
+    <h2>3. Data we collect</h2>
+    <h3>3.1 Telegram user ID (authentication only)</h3>
+    <p>When you connect the extension with Telegram (e.g. via the Telegram bot), we receive your Telegram user ID to link your usage to the service. We use it only for authentication and service provision.</p>
+    <h3>3.2 Consent logs (timestamp + policy version)</h3>
+    <p>Where we record that you have given consent, we store a record of that consent together with its timestamp and the privacy policy version you accepted. We do not use this for any purpose other than compliance and proof of consent.</p>
+    <h3>3.3 User-selected message content (explicit action only)</h3>
+    <p>Only the text of Telegram messages that you explicitly select for analysis is processed. This content is sent to our systems solely to generate reply suggestions. We do not use it for any other purpose. Processing is triggered only by your explicit action (e.g. selecting a message and requesting analysis).</p>
+    <h3>3.4 Minimal technical logs (IP + user agent for security only)</h3>
+    <p>When you use the website or contact support, we may log IP address and User Agent for security and abuse prevention. We use this data only for security and support. We do not use it for profiling or tracking.</p>
+  </section>
+
+  <section id="data-we-do-not-collect" class="policy-section">
+    <h2>4. Data we do not collect</h2>
+    <p>We do not:</p>
+    <ul>
+      <li>Read your chats automatically. The extension does not access any message until you explicitly select it.</li>
+      <li>Monitor or scrape your conversations in the background.</li>
+      <li>Sell your personal data to any third party.</li>
+      <li>Use your data for advertising or advertising-related tracking.</li>
+      <li>Use your message content for AI model training or any purpose other than generating the suggestion you requested.</li>
+      <li>Collect data beyond what is set out in section 3.</li>
+    </ul>
+  </section>
+
+  <section id="purpose-legal-basis" class="policy-section">
+    <h2>5. Purpose and legal basis</h2>
+    <p>We process your data only for:</p>
+    <ul>
+      <li><strong>Service provision</strong> — To authenticate you, analyze the messages you select, and deliver reply suggestions. Legal basis: Your consent and/or performance of a contract (depending on jurisdiction).</li>
+      <li><strong>Security</strong> — To protect our systems and users (e.g. abuse prevention, incident response). Legal basis: Legitimate interest.</li>
+      <li><strong>Compliance</strong> — To record consent and policy version for accountability. Legal basis: Legitimate interest and legal obligation.</li>
+    </ul>
+    <p>Where the GDPR applies, we rely on consent where we ask for it explicitly; otherwise we use contract performance or legitimate interest as appropriate. Under the CCPA, we do not sell your personal information.</p>
+  </section>
+
+  <section id="retention" class="policy-section">
+    <h2>6. Data retention</h2>
+    <ul>
+      <li><strong>Selected message content</strong> — Processed transiently. We do not store this content after the processing required to generate your suggestion is complete.</li>
+      <li><strong>Consent logs</strong> — Retained for up to 3 years for accountability and compliance, then deleted.</li>
+      <li><strong>Security logs (IP, User Agent)</strong> — Retained for up to 12 months, then deleted or anonymized.</li>
+      <li><strong>Local data (extension/browser)</strong> — Stored on your device. You can clear it by uninstalling the extension or clearing site/extension data.</li>
+    </ul>
+    <p>After the retention period, we delete or anonymize personal data unless we must keep it for a legal obligation.</p>
+  </section>
+
+  <section id="third-party" class="policy-section">
+    <h2>7. Third-party processing</h2>
+    <p>We use the following categories of processors:</p>
+    <ul>
+      <li><strong>Hosting provider</strong> — To run our website and backend services. They process data only on our instructions as processors.</li>
+      <li><strong>AI API provider</strong> — To analyze the message content you select and generate suggestions. Only the content you choose to analyze is sent. We use a provider that complies with applicable data protection requirements under a data processing agreement. We do not use your content for model training.</li>
+    </ul>
+    <p>We do not use advertising networks. We do not share your data with third parties for their own purposes.</p>
+    <p>When required by law, court order, or to protect our rights and safety, we may disclose data to authorities.</p>
+  </section>
+
+  <section id="international" class="policy-section">
+    <h2>8. International transfers</h2>
+    <p>Your data may be processed in countries outside your residence (e.g. EU to US). Where we transfer data from the EEA or UK, we use appropriate safeguards such as Standard Contractual Clauses (SCCs) or other mechanisms approved by regulators. You may request details of these safeguards by contacting us at <a href="mailto:contact@motsac.com">contact@motsac.com</a>.</p>
+  </section>
+
+  <section id="user-rights" class="policy-section">
+    <h2>9. User rights</h2>
+    <p>Depending on your location, you may have the following rights:</p>
+    <ul>
+      <li><strong>Access</strong> — To receive a copy of the personal data we hold about you.</li>
+      <li><strong>Correction</strong> — To have inaccurate data corrected.</li>
+      <li><strong>Deletion</strong> — To have your data deleted, subject to legal exceptions.</li>
+      <li><strong>Portability</strong> — To receive your data in a structured, machine-readable format (where technically feasible).</li>
+      <li><strong>Restriction</strong> — To restrict processing in certain circumstances.</li>
+      <li><strong>Objection</strong> — To object to processing based on legitimate interest.</li>
+      <li><strong>Withdraw consent</strong> — Where processing is based on consent, to withdraw it at any time.</li>
+      <li><strong>Complaint</strong> — To lodge a complaint with a supervisory authority (e.g. in your country of residence).</li>
+    </ul>
+    <p><strong>How to exercise your rights:</strong> Send a request to <a href="mailto:contact@motsac.com">contact@motsac.com</a> with the subject "Privacy request" and a clear description of what you want (e.g. access, deletion). We will verify your identity and respond within the timeframe required by applicable law (e.g. 30 days under GDPR; similar under CCPA where applicable). For CCPA, you may designate an authorized agent; we will verify the agent's authority.</p>
+  </section>
+
+  <section id="deletion-procedure" class="policy-section">
+    <h2>10. Data deletion procedure</h2>
+    <p>To request deletion of your data:</p>
+    <ol>
+      <li>Send an email to <a href="mailto:contact@motsac.com">contact@motsac.com</a> with the subject "Privacy request — Deletion".</li>
+      <li>Include enough information for us to identify you (e.g. Telegram user ID or the email you used to contact us).</li>
+      <li>We will confirm receipt and verify your identity where necessary.</li>
+      <li>We will delete the personal data we hold about you within 30 days (or within the timeframe required by applicable law), except where we must retain it for a legal obligation.</li>
+      <li>We will confirm when deletion is complete.</li>
+    </ol>
+    <p>If we cannot delete certain data for legal reasons, we will inform you and explain the reason.</p>
+  </section>
+
+  <section id="security" class="policy-section">
+    <h2>11. Security measures</h2>
+    <p>We implement technical and organizational measures to protect your data, including:</p>
+    <ul>
+      <li>HTTPS and secure communication for data in transit.</li>
+      <li>Access to personal data restricted to those who need it for the purposes in section 5.</li>
+      <li>Contractual and technical safeguards with processors (e.g. hosting, AI API).</li>
+      <li>Where feasible, encryption and access controls for data at rest.</li>
+    </ul>
+    <p>No system is completely secure. If a breach affecting your data occurs, we will notify you and regulators where required by law.</p>
+  </section>
+
+  <section id="children" class="policy-section">
+    <h2>12. Children's privacy</h2>
+    <p>Our service is not directed at children under 16 (or the applicable age in your jurisdiction). We do not knowingly collect personal data from children. If you believe we have collected data from a child, contact us at <a href="mailto:contact@motsac.com">contact@motsac.com</a> and we will delete it promptly.</p>
+  </section>
+
+  <section id="changes" class="policy-section">
+    <h2>13. Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will post the updated version on the privacy page and update the version number and effective date at the top. For material changes, we may notify you by email or a notice on the website or extension. We encourage you to review this policy periodically.</p>
+  </section>
+
+  <section id="contact" class="policy-section">
+    <h2>14. Contact information</h2>
+    <p><strong>Data controller / Operator:</strong> Motsac</p>
+    <p><strong>Contact:</strong> <a href="mailto:contact@motsac.com">contact@motsac.com</a></p>
+    <p>For privacy requests, data protection inquiries, or to exercise your rights, send email to the address above with the subject "Privacy request" or "Data protection."</p>
+    <p>We do not currently designate a separate Data Protection Officer. For data protection matters, contact <a href="mailto:contact@motsac.com">contact@motsac.com</a>. If we appoint a DPO in the future, we will publish the contact details on the privacy page.</p>
+    <p>Optional contact channel for general inquiries: <a href="https://t.me/madebykobets" target="_blank" rel="noopener">Telegram @madebykobets</a>. For formal privacy or deletion requests, we recommend email.</p>
+  </section>
+
+  <section id="key-statements">
+    <h2>Key statements at a glance</h2>
+    <div class="usecases">
+      <div><b>Reads only messages you explicitly select</b><br>
+      Motsac analyzes only the messages you highlight or select. Nothing else.</div>
+      <div><b>No background scraping</b><br>
+      We do not read your chats in the background. No automatic scanning.</div>
+      <div><b>No auto-sending</b><br>
+      Nothing is sent automatically. You review every suggestion and decide what to send.</div>
+      <div><b>No full chat storage</b><br>
+      We do not store your entire chat history. Only the messages you select for analysis are processed.</div>
+      <div><b>No access without user action</b><br>
+      Motsac only works when you actively select a message. No passive monitoring.</div>
+    </div>
   </section>
   </main>
 

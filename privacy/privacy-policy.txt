@@ -1,0 +1,174 @@
+MOTSAC PRIVACY POLICY
+Version: 1.1
+Effective date: 23 February 2026
+Document ID: motsac-privacy-v1.1
+Document hash (SHA256): bb8d802f9e80d486dbeb9e0f49b0ef7b10bb46ef6f4ff73b7887800fef32a42c
+================================================================================
+
+1. INTRODUCTION
+
+Motsac ("we", "us", "our") is a Chrome extension and associated website that integrates with Telegram. It allows users to analyze and edit selected Telegram messages via an AI service. The extension only processes messages explicitly selected by the user; nothing is sent without explicit user action.
+
+This Privacy Policy describes how we collect, use, store, and protect personal data in relation to (a) the Motsac website and (b) the Motsac Chrome extension and Telegram bot. It complies with the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA) as applicable, and general privacy standards.
+
+--------------------------------------------------------------------------------
+
+2. DEFINITIONS
+
+- Personal data: Any information relating to an identified or identifiable natural person (e.g. identifiers, content you provide, technical data).
+
+- Processing: Any operation performed on personal data (e.g. collection, storage, use, transmission, deletion).
+
+- Controller: The entity that determines the purposes and means of processing (here: Motsac, the operator of the service).
+
+- Processor: An entity that processes personal data on behalf of the controller (e.g. hosting or AI API providers).
+
+- User: Any individual who uses the Motsac website, Chrome extension, or Telegram bot.
+
+--------------------------------------------------------------------------------
+
+3. DATA WE COLLECT
+
+3.1 Telegram user ID (authentication only)
+When you connect the extension with Telegram (e.g. via the Telegram bot), we receive your Telegram user ID to link your usage to the service. We use it only for authentication and service provision.
+
+3.2 Consent logs (timestamp + policy version)
+Where we record that you have given consent, we store a record of that consent together with its timestamp and the privacy policy version you accepted. We do not use this for any purpose other than compliance and proof of consent.
+
+3.3 User-selected message content (explicit action only)
+Only the text of Telegram messages that you explicitly select for analysis is processed. This content is sent to our systems solely to generate reply suggestions. We do not use it for any other purpose. Processing is triggered only by your explicit action (e.g. selecting a message and requesting analysis).
+
+3.4 Minimal technical logs (IP + user agent for security only)
+When you use the website or contact support, we may log IP address and User Agent for security and abuse prevention. We use this data only for security and support. We do not use it for profiling or tracking.
+
+--------------------------------------------------------------------------------
+
+4. DATA WE DO NOT COLLECT
+
+We do not:
+- Read your chats automatically. The extension does not access any message until you explicitly select it.
+- Monitor or scrape your conversations in the background.
+- Sell your personal data to any third party.
+- Use your data for advertising or advertising-related tracking.
+- Use your message content for AI model training or any purpose other than generating the suggestion you requested.
+- Collect data beyond what is set out in section 3.
+
+--------------------------------------------------------------------------------
+
+5. PURPOSE AND LEGAL BASIS
+
+We process your data only for:
+
+- Service provision: To authenticate you, analyze the messages you select, and deliver reply suggestions. Legal basis: Your consent and/or performance of a contract (depending on jurisdiction).
+
+- Security: To protect our systems and users (e.g. abuse prevention, incident response). Legal basis: Legitimate interest.
+
+- Compliance: To record consent and policy version for accountability. Legal basis: Legitimate interest and legal obligation.
+
+Where the GDPR applies, we rely on consent where we ask for it explicitly; otherwise we use contract performance or legitimate interest as appropriate. Under the CCPA, we do not sell your personal information.
+
+--------------------------------------------------------------------------------
+
+6. DATA RETENTION
+
+- Selected message content: Processed transiently. We do not store this content after the processing required to generate your suggestion is complete.
+
+- Consent logs: Retained for up to 3 years for accountability and compliance, then deleted.
+
+- Security logs (IP, User Agent): Retained for up to 12 months, then deleted or anonymized.
+
+- Local data (extension/browser): Stored on your device. You can clear it by uninstalling the extension or clearing site/extension data.
+
+After the retention period, we delete or anonymize personal data unless we must keep it for a legal obligation.
+
+--------------------------------------------------------------------------------
+
+7. THIRD-PARTY PROCESSING
+
+We use the following categories of processors:
+
+- Hosting provider: To run our website and backend services. They process data only on our instructions as processors.
+
+- AI API provider: To analyze the message content you select and generate suggestions. Only the content you choose to analyze is sent. We use a provider that complies with applicable data protection requirements under a data processing agreement. We do not use your content for model training.
+
+We do not use advertising networks. We do not share your data with third parties for their own purposes.
+
+When required by law, court order, or to protect our rights and safety, we may disclose data to authorities.
+
+--------------------------------------------------------------------------------
+
+8. INTERNATIONAL TRANSFERS
+
+Your data may be processed in countries outside your residence (e.g. EU to US). Where we transfer data from the EEA or UK, we use appropriate safeguards such as Standard Contractual Clauses (SCCs) or other mechanisms approved by regulators. You may request details of these safeguards by contacting us at contact@motsac.com.
+
+--------------------------------------------------------------------------------
+
+9. USER RIGHTS
+
+Depending on your location, you may have the following rights:
+
+- Access: To receive a copy of the personal data we hold about you.
+- Correction: To have inaccurate data corrected.
+- Deletion: To have your data deleted, subject to legal exceptions.
+- Portability: To receive your data in a structured, machine-readable format (where technically feasible).
+- Restriction: To restrict processing in certain circumstances.
+- Objection: To object to processing based on legitimate interest.
+- Withdraw consent: Where processing is based on consent, to withdraw it at any time.
+- Complaint: To lodge a complaint with a supervisory authority (e.g. in your country of residence).
+
+How to exercise your rights: Send a request to contact@motsac.com with the subject "Privacy request" and a clear description of what you want (e.g. access, deletion). We will verify your identity and respond within the timeframe required by applicable law (e.g. 30 days under GDPR; similar under CCPA where applicable). For CCPA, you may designate an authorized agent; we will verify the agent's authority.
+
+--------------------------------------------------------------------------------
+
+10. DATA DELETION PROCEDURE
+
+To request deletion of your data:
+
+1. Send an email to contact@motsac.com with the subject "Privacy request — Deletion".
+2. Include enough information for us to identify you (e.g. Telegram user ID or the email you used to contact us).
+3. We will confirm receipt and verify your identity where necessary.
+4. We will delete the personal data we hold about you within 30 days (or within the timeframe required by applicable law), except where we must retain it for a legal obligation.
+5. We will confirm when deletion is complete.
+
+If we cannot delete certain data for legal reasons, we will inform you and explain the reason.
+
+--------------------------------------------------------------------------------
+
+11. SECURITY MEASURES
+
+We implement technical and organizational measures to protect your data, including:
+
+- HTTPS and secure communication for data in transit.
+- Access to personal data restricted to those who need it for the purposes in section 5.
+- Contractual and technical safeguards with processors (e.g. hosting, AI API).
+- Where feasible, encryption and access controls for data at rest.
+
+No system is completely secure. If a breach affecting your data occurs, we will notify you and regulators where required by law.
+
+--------------------------------------------------------------------------------
+
+12. CHILDREN'S PRIVACY
+
+Our service is not directed at children under 16 (or the applicable age in your jurisdiction). We do not knowingly collect personal data from children. If you believe we have collected data from a child, contact us at contact@motsac.com and we will delete it promptly.
+
+--------------------------------------------------------------------------------
+
+13. CHANGES TO THIS POLICY
+
+We may update this Privacy Policy from time to time. We will post the updated version on the privacy page and update the version number and effective date at the top. For material changes, we may notify you by email or a notice on the website or extension. We encourage you to review this policy periodically.
+
+--------------------------------------------------------------------------------
+
+14. CONTACT INFORMATION
+
+Data controller / Operator: Motsac
+Contact: contact@motsac.com
+
+For privacy requests, data protection inquiries, or to exercise your rights, send email to the address above with the subject "Privacy request" or "Data protection."
+
+We do not currently designate a separate Data Protection Officer. For data protection matters, contact contact@motsac.com. If we appoint a DPO in the future, we will publish the contact details on the privacy page.
+
+Optional contact channel for general inquiries: Telegram @madebykobets. For formal privacy or deletion requests, we recommend email.
+
+================================================================================
+End of document
