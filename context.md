@@ -1,250 +1,149 @@
-# Project Context: Motsac (Sandbox Website on GitHub Pages)
+Context: Motsac — Chrome extension (Negotiation Assistant).
 
-## Project Goal
-Create a minimal sandbox website for Motsac using GitHub Pages.
+Current state:
+- v0.1 published (Telegram only).
+- Chrome developer account approved.
+- Terms of Use v1.1 finalized.
+- Privacy Policy v1.1 finalized.
+- GA active (standard, no consent wall for MVP).
+- Freemium model planned.
+- AI suggestions processed server-side.
+- No background monitoring of Telegram.
 
-Primary goals:
-- explain the product in seconds
-- remove skepticism and fear
-- build trust
-- lead to Chrome extension installation
+Goal:
+Move from legal-ready MVP to working functional v0.2.
 
-This site exists to:
-- pass the Google sandbox period
-- support Chrome Web Store moderation
-- serve as a trust and explanation layer
+====================================================
+FULL ROADMAP (PROJECT OVERVIEW)
+====================================================
 
-This is NOT a growth, SEO, or content platform.
+[0] Chrome moderation (DONE)
+- Icons 16/48/128
+- Landing pages
+- Lite version uploaded
+- Passed initial release
 
----
+[1] Legal (DONE)
+- Terms of Use v1.1
+- Privacy Policy v1.1
+- International neutral
+- AI liability protected
+
+====================================================
+ROADMAP FOR v0.2 (CURRENT TARGET)
+====================================================
+
+PHASE 1 — CONSENT + IDENTITY (Core Foundation)
 
-## Core Principles
-- Minimalism over completeness
-- Clarity over persuasion
-- Trust over hype
-- User stays in control
-- No auto-send, no spying, no background scraping
-
----
-
-## Pages Overview (Fixed List)
-
-The site consists of exactly 8 pages:
-
-1. `/`
-2. `/install/`
-3. `/how-it-works/`
-4. `/examples/`
-5. `/telegram/`
-6. `/privacy/`
-7. `/contact/`
-8. `/changelog/`
-
-No other pages should be added at this stage.
-
----
-
-## 1. Home Page `/`
-
-### Purpose
-Explain what Motsac is in 5–7 seconds and remove first-contact skepticism.
-
-### Sections (strict order)
-
-1. Hero
-   - H1: "Now you know what to say"
-   - Subheading: "AI that analyzes your chats and suggests better replies"
-   - Primary CTA: "Install for Chrome"
-   - Note: "Currently available for Telegram"
-
-2. Problem
-   - You overthink replies
-   - Conversations stall for no clear reason
-   - You don’t know what to say next — or what NOT to say
-   - Context is lost in chats
-
-3. Solution
-   - Analyzes conversation context
-   - Suggests better approaches (not ready-made spam replies)
-   - Shows what improves or worsens the contact
-
-4. Skeptic Questions
-   - “Is this bot telling me what to write?”
-   - “Is this like Grammarly for chats?”
-   - “Does it read my private messages?”
-   - “Why do I even need this?”
-
-5. Final CTA
-   - Button: "Install for Chrome"
-   - Disclaimer: "No auto-send. You decide what to send."
-
----
-
-## 2. Install `/install/`
-
-### Purpose
-Direct installation funnel with zero distraction.
-
-### Content
-- Chrome Web Store install button
-- Simple steps:
-  1. Install extension
-  2. Open Telegram Web
-  3. Select a message
-- Short note:
-  - "Telegram only (for now)"
-  - "No automatic sending"
-
-No marketing copy. No alternatives.
-
----
-
-## 3. How It Works `/how-it-works/`
-
-### Purpose
-Explain logic and remove fear of “black-box AI”.
-
-### Structure
-- Step 1: Select a message
-- Step 2: Analyze context
-  - Tone
-  - Power balance
-  - Emotional signals
-- Step 3: See suggestions
-  - Best approaches (+%)
-  - What not to say (–%)
-- Step 4: You decide what to send
-
-No technical or implementation details.
-Focus on transparency and control.
-
----
-
-## 4. Examples `/examples/`
-
-### Purpose
-Show concrete usage without selling.
-
-### Examples
-- Cold contact
-- Negotiation
-- Personal conversation
-
-### Format
-- Before (original message)
-- After (improved approach)
-- Short note explaining *why* it works
-
-No promises. No performance claims.
-
----
-
-## 5. Telegram `/telegram/`
-
-### Purpose
-Explain why Telegram is supported and set correct expectations.
-
-### Content
-- Why Telegram was chosen first
-- How Motsac works inside Telegram Web
-- Clear limitations:
-  - Web version only
-  - No mobile app support yet
-- Statement:
-  - "Other messengers may come later"
-
-This page prevents “why not WhatsApp / iMessage” questions.
-
----
-
-## 6. Privacy `/privacy/`
-
-### Purpose
-Critical trust page for users and Chrome Web Store moderation.
-
-### Key Statements
-- Reads only messages you explicitly select
-- No background scraping
-- No auto-sending
-- No full chat storage
-- No access without user action
-- Works locally in the browser where possible
-
-Language must be clear and human, not legal-heavy.
-
----
-
-## 7. Contact `/contact/`
-
-### Purpose
-Provide legitimacy and a single point of contact.
-
-### Content
-- Contact email
-- Short sentence:
-  - “For questions, feedback, or moderation inquiries”
-
-No forms. No CRM. No tracking.
-
----
-
-## 8. Changelog `/changelog/`
-
-### Purpose
-Demonstrate product evolution and transparency.
-
-### Content Rules
-- Chronological list of updates
-- Short entries:
-  - Date
-  - What changed
-- Focus on:
-  - Improvements
-  - Fixes
-  - New capabilities
-
-No roadmap promises. No future guarantees.
-
----
-
-## Navigation Rules
-
-### Header Navigation
-- How it works
-- Examples
-- Telegram
-- Install
-
-### Footer Navigation
-- Privacy
-- Contact
-- Changelog
-
----
-
-## Explicit Exclusions (DO NOT ADD)
-
-- Blog
-- SEO articles
-- Pricing
-- Roadmap
-- User accounts
-- Analytics dashboards
-- Testimonials
-
----
-
-## Positioning Summary
-
-This website is:
-- an explanation layer
-- a trust layer
-- a sandbox placeholder
-
-It is NOT:
-- a marketing funnel
-- a content platform
-- a growth engine
-
-Every page must serve one function:
-Explain → Reduce fear → Lead to Install.
+1. Consent screen inside extension
+   - Single checkbox
+   - Link to Terms
+   - Link to Privacy
+   - “Continue” button
+   - Store consent timestamp locally
+   - Log consent on server
+
+2. Telegram bot authentication
+   - User clicks “Continue”
+   - Redirect to TG bot
+   - Bot returns Telegram ID
+   - Server binds Telegram ID to extension session
+   - Minimal identity layer created
+
+DELIVERABLE:
+User identity + legal consent fully integrated.
+
+----------------------------------------------------
+
+PHASE 2 — CHAT PARSING (Manual Trigger Only)
+
+3. Manual parsing only
+   - No auto background scraping
+   - Button: “Add new messages”
+   - Extract selected messages only
+   - Mark parsed messages with 🗿
+
+4. Media files handling (optional v0.2)
+   - Safe skip if complex
+
+DELIVERABLE:
+User-controlled message extraction.
+
+----------------------------------------------------
+
+PHASE 3 — EDIT LAYER
+
+5. “Edit” mode
+   - Show parsed messages
+   - Allow word deletion → replace with [deleted]
+   - Do not alter original Telegram message
+
+6. Store edited version in indexedDB
+
+DELIVERABLE:
+User has control before sending to AI.
+
+----------------------------------------------------
+
+PHASE 4 — SERVER PIPELINE
+
+7. Send edited content to server
+8. Stream AI response
+9. Store summary + tags
+10. Delete user content after processing
+
+DELIVERABLE:
+Working AI suggestion loop.
+
+----------------------------------------------------
+
+PHASE 5 — UX STRUCTURE (Negotiation Framework)
+
+Five-step interface:
+
+(0) Result approach
+(1) Current situation
+(2) I want
+(3) Best approaches (correct/incorrect)
+(4) Forecast
+(5) Reinforcement
+
+Minimal UI.
+No complexity.
+Emoji limited to head + hands.
+
+DELIVERABLE:
+Structured negotiation guidance, not just raw AI output.
+
+====================================================
+WHAT REMAINS FOR v0.2 (CRITICAL PATH)
+====================================================
+
+1. Implement consent screen logic
+2. Implement Telegram ID binding
+3. Create server endpoint for identity
+4. Implement manual message parsing
+5. Implement edit layer
+6. Connect streaming AI response
+7. Ensure data deletion after response
+8. Add changelog entry for legal foundation
+9. Prepare Chrome update submission
+
+====================================================
+SUCCESS CRITERIA FOR v0.2
+====================================================
+
+- User gives consent
+- User authenticated
+- User manually selects messages
+- User edits content
+- AI returns structured output
+- No background monitoring
+- No automatic scraping
+- No legal inconsistencies
+
+====================================================
+Next task:
+Help prioritize implementation order and reduce complexity.
+Focus only on critical path for v0.2.
+Ignore future scaling for now.
