@@ -35,6 +35,30 @@
   </section>
 
   <section id="updates">
+    <h2><time datetime="2026-04-07">2026-04-07 — v0.4.0</time></h2>
+    <p><strong>Added</strong></p>
+    <ul>
+      <li>Message Editor after parsing</li>
+      <li>Ability to remove individual words from messages</li>
+      <li>Ability to remove entire messages</li>
+      <li>Support for editing before seeing the final result</li>
+    </ul>
+    <p><strong>Improved</strong></p>
+    <ul>
+      <li>Result JSON consistency after message deletion</li>
+      <li>Handling of media messages after removal</li>
+    </ul>
+    <p><strong>Notes</strong></p>
+    <ul>
+      <li>Editing is optional and fully local</li>
+    </ul>
+    <p><strong>Data Control</strong></p>
+    <ul>
+      <li>Users can modify or remove message content before it is processed</li>
+      <li>Processing now occurs only after optional user review and editing</li>
+      <li>No additional data collection introduced in this version</li>
+    </ul>
+
     <h2><time datetime="2026-03-29">2026-03-29 — v0.3.0</time></h2>
     <ul>
       <li>Improved stability of Telegram message parsing</li>
@@ -50,6 +74,11 @@
       <li>Added consent logging</li>
       <li>Restricted extension functionality until user consent and authentication</li>
       <li>Security: one-time auth codes with expiration (TTL)</li>
+    </ul>
+    <p><strong>Data Protection</strong></p>
+    <ul>
+      <li>Explicit user consent required before any functionality is enabled</li>
+      <li>Extension functionality is blocked until consent is provided</li>
     </ul>
 
     <h2><time datetime="2026-02-24">2026-02-24</time></h2>
