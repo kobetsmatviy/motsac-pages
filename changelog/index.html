@@ -35,6 +35,33 @@
   </section>
 
   <section id="updates">
+    <h2><time datetime="2026-04-09">2026-04-09 — v0.5.0</time></h2>
+    <p><strong>Added</strong></p>
+    <ul>
+      <li>Offline mode for local storage of approved messages</li>
+      <li>Automatic merge of approved messages per chat (based on messageId)</li>
+      <li>Reopen result from previously saved local data</li>
+      <li>Visual markers for already processed messages (on user action)</li>
+    </ul>
+    <p><strong>Improved</strong></p>
+    <ul>
+      <li>Result is now built exclusively from locally saved data</li>
+      <li>Clear separation between parsing, approval, and result stages</li>
+      <li>More predictable behavior when reopening chats</li>
+    </ul>
+    <p><strong>Notes</strong></p>
+    <ul>
+      <li>Offline data is stored locally in the browser (IndexedDB)</li>
+      <li>No background processing or automatic data collection introduced</li>
+      <li>All actions remain explicitly user-triggered</li>
+    </ul>
+    <p><strong>Data Control</strong></p>
+    <ul>
+      <li>Approved messages can be stored locally after user confirmation</li>
+      <li>No message content is transmitted without user interaction</li>
+      <li>Offline mode does not expand data collection scope</li>
+    </ul>
+
     <h2><time datetime="2026-04-07">2026-04-07 — v0.4.0</time></h2>
     <p><strong>Added</strong></p>
     <ul>
