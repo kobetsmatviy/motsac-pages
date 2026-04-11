@@ -41,7 +41,7 @@
   <section id="hero">
     <h1>Privacy Policy</h1>
     <p>How Motsac collects, uses, and protects your data. This policy applies to the Motsac website and the Motsac Chrome extension (including its integration with Telegram).</p>
-    <p class="version-block"><strong>Version:</strong> 1.1 &middot; <strong>Effective date:</strong> 23 February 2026 &middot; <strong>Document ID:</strong> motsac-privacy-v1.1</p>
+    <p class="version-block"><strong>Version:</strong> 1.2 &middot; <strong>Effective date:</strong> 11 April 2026 &middot; <strong>Document ID:</strong> motsac-privacy-v1.2</p>
   </section>
 
   <section id="toc">
@@ -68,7 +68,8 @@
 
   <section id="intro" class="policy-section">
     <h2>1. Introduction</h2>
-    <p>Motsac ("we", "us", "our") is a Chrome extension and associated website that integrates with Telegram. It allows users to analyze and edit selected Telegram messages via an AI service. The extension only processes messages explicitly selected by the user; nothing is sent without explicit user action.</p>
+    <p>Motsac ("we", "us", "our") is a Chrome extension and associated website that integrates with Telegram. It allows users to analyze and edit conversation data they choose to work with, via an AI service. The overall flow is: data is parsed from the visible interface; it is processed and stored locally in the user's browser; the user may review and edit it; and it is transmitted to our servers only after an explicit user action to request analysis or suggestions.</p>
+    <p>Data is first processed and stored locally in the user's browser. The user can review and edit this data before any transmission. Data is sent to the server only after explicit user action. No automatic collection or background transmission occurs.</p>
     <p>This Privacy Policy describes how we collect, use, store, and protect personal data in relation to (a) the Motsac website and (b) the Motsac Chrome extension and Telegram bot. It complies with the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA) as applicable, and general privacy standards.</p>
   </section>
 
@@ -89,18 +90,20 @@
     <p>When you connect the extension with Telegram (e.g. via the Telegram bot), we receive your Telegram user ID to link your usage to the service. We use it only for authentication and service provision.</p>
     <h3>3.2 Consent logs (timestamp + policy version)</h3>
     <p>Where we record that you have given consent, we store a record of that consent together with its timestamp and the privacy policy version you accepted. We do not use this for any purpose other than compliance and proof of consent.</p>
-    <h3>3.3 User-selected message content (explicit action only)</h3>
-    <p>Only the text of Telegram messages that you explicitly select for analysis is processed. This content is sent to our systems solely to generate reply suggestions. We do not use it for any other purpose. Processing is triggered only by your explicit action (e.g. selecting a message and requesting analysis).</p>
-    <h3>3.4 Minimal technical logs (IP + user agent for security only)</h3>
+    <h3>3.3 Local conversation data (browser storage)</h3>
+    <p>Visible Telegram messages may be processed in the extension after you start an analysis or similar user-initiated workflow. That data is stored locally in your browser (for example in IndexedDB or an equivalent mechanism). Depending on what is visible and what you choose to include, local storage may hold: message text; message metadata (such as timestamp, message type, and unread status); reply context; reactions (in a normalized form); and derived fields (for example relative timing such as lastMessageAgo). You can review and edit this data before any transmission. Local conversation data is not automatically sent to our servers.</p>
+    <h3>3.4 Data sent to backend (explicit user action)</h3>
+    <p>Data is transmitted to our backend only after you take an explicit action to submit it for processing. What is sent can include: message content; associated metadata (such as timestamp, type, reply context, and reactions); and display names you configure (for example meName and peerName). We use submitted data solely to generate the analysis or suggestions you requested. There is no automatic or background sending of conversation data.</p>
+    <h3>3.5 Minimal technical logs (IP + user agent for security only)</h3>
     <p>When you use the website or contact support, we may log IP address and User Agent for security and abuse prevention. We use this data only for security and support. We do not use it for profiling or tracking.</p>
+    <p>Submitted content may include information relating to other participants in the conversation. Such data is included only if it is visible in the interface and reflected in what you select or include for analysis. Motsac minimizes identifiers where possible and does not collect additional third-party data independently of your use of the Service.</p>
   </section>
 
   <section id="data-we-do-not-collect" class="policy-section">
     <h2>4. Data we do not collect</h2>
     <p>We do not:</p>
     <ul>
-      <li>Read your chats automatically. The extension does not access any message until you explicitly select it.</li>
-      <li>Monitor or scrape your conversations in the background.</li>
+      <li>Access or process conversation data until you explicitly initiate analysis (or a comparable user-initiated action in the extension). No background monitoring or automatic scanning of chats occurs. No data is transmitted without user interaction.</li>
       <li>Sell your personal data to any third party.</li>
       <li>Use your data for advertising or advertising-related tracking.</li>
       <li>Use your message content for AI model training or any purpose other than generating the suggestion you requested.</li>
@@ -112,20 +115,21 @@
     <h2>5. Purpose and legal basis</h2>
     <p>We process your data only for:</p>
     <ul>
-      <li><strong>Service provision</strong> — To authenticate you, analyze the messages you select, and deliver reply suggestions. Legal basis: Your consent and/or performance of a contract (depending on jurisdiction).</li>
+      <li><strong>Service provision</strong> — To authenticate you; to enable local preparation, review, and editing of conversation data in your browser; and, when you explicitly submit data, to analyze it and deliver the requested analysis or reply suggestions. Legal basis: Your consent and/or performance of a contract (depending on jurisdiction).</li>
       <li><strong>Security</strong> — To protect our systems and users (e.g. abuse prevention, incident response). Legal basis: Legitimate interest.</li>
       <li><strong>Compliance</strong> — To record consent and policy version for accountability. Legal basis: Legitimate interest and legal obligation.</li>
     </ul>
     <p>Where the GDPR applies, we rely on consent where we ask for it explicitly; otherwise we use contract performance or legitimate interest as appropriate. Under the CCPA, we do not sell your personal information.</p>
+    <p>Users fully control what data is submitted. Users can review, edit, or remove content before sending. Messages may contain personal or sensitive information relating to you or others, and users are responsible for reviewing such content before submission.</p>
   </section>
 
   <section id="retention" class="policy-section">
     <h2>6. Data retention</h2>
     <ul>
-      <li><strong>Selected message content</strong> — Processed transiently. We do not store this content after the processing required to generate your suggestion is complete.</li>
+      <li><strong>Local browser data</strong> — Stored on your device (including conversation-related data held in the browser as described in section 3.3). It persists until you clear extension or site data, uninstall the extension, or otherwise delete local storage. It is not transmitted automatically.</li>
+      <li><strong>Submitted data (backend)</strong> — Used to generate the analysis or suggestions you requested. We do not retain submitted message content after processing, except as required for security or legal purposes.</li>
       <li><strong>Consent logs</strong> — Retained for up to 3 years for accountability and compliance, then deleted.</li>
       <li><strong>Security logs (IP, User Agent)</strong> — Retained for up to 12 months, then deleted or anonymized.</li>
-      <li><strong>Local data (extension/browser)</strong> — Stored on your device. You can clear it by uninstalling the extension or clearing site/extension data.</li>
     </ul>
     <p>After the retention period, we delete or anonymize personal data unless we must keep it for a legal obligation.</p>
   </section>
@@ -135,7 +139,7 @@
     <p>We use the following categories of processors:</p>
     <ul>
       <li><strong>Hosting provider</strong> — To run our website and backend services. They process data only on our instructions as processors.</li>
-      <li><strong>AI API provider</strong> — To analyze the message content you select and generate suggestions. Only the content you choose to analyze is sent. We use a provider that complies with applicable data protection requirements under a data processing agreement. We do not use your content for model training.</li>
+      <li><strong>AI API provider</strong> — To perform the analysis you request and generate suggestions. AI providers receive only user-submitted data necessary for the requested analysis. No background-collected or full-chat data is shared. We use a provider that complies with applicable data protection requirements under a data processing agreement. Data you submit is not used for model training.</li>
     </ul>
     <p>We do not use advertising networks. We do not share your data with third parties for their own purposes.</p>
     <p>When required by law, court order, or to protect our rights and safety, we may disclose data to authorities.</p>
@@ -209,16 +213,16 @@
   <section id="key-statements">
     <h2>Key statements at a glance</h2>
     <div class="usecases">
-      <div><b>Reads only messages you explicitly select</b><br>
-      Motsac analyzes only the messages you highlight or select. Nothing else.</div>
-      <div><b>No background scraping</b><br>
-      We do not read your chats in the background. No automatic scanning.</div>
-      <div><b>No auto-sending</b><br>
-      Nothing is sent automatically. You review every suggestion and decide what to send.</div>
-      <div><b>No full chat storage</b><br>
-      We do not store your entire chat history. Only the messages you select for analysis are processed.</div>
-      <div><b>No access without user action</b><br>
-      Motsac only works when you actively select a message. No passive monitoring.</div>
+      <div><b>Works only after explicit user action</b><br>
+      Conversation data is handled only after you initiate analysis or a comparable explicit step in the extension.</div>
+      <div><b>Data is stored locally before sending</b><br>
+      Relevant data can be held in your browser so you can review and edit it before any transmission.</div>
+      <div><b>No background monitoring</b><br>
+      We do not monitor or scan your chats in the background. There is no passive collection of conversation data.</div>
+      <div><b>No automatic sending</b><br>
+      Data is sent to our servers only when you explicitly submit it. Nothing is uploaded automatically.</div>
+      <div><b>Only user-reviewed data is submitted</b><br>
+      What reaches our backend is limited to what you choose to send after local review and editing.</div>
     </div>
   </section>
   </main>
