@@ -35,15 +35,39 @@
   </section>
 
   <section id="updates">
-    <h2><time datetime="2026-04-11">2026-04-11</time></h2>
+    <h2><time datetime="2026-04-12">2026-04-12 — v0.6.0</time></h2>
+    <p><strong>Added</strong></p>
+    <ul>
+      <li>Manual data transmission to server after explicit user action</li>
+      <li>Integration with backend processing for conversation analysis</li>
+      <li>Separation between local storage (IndexedDB) and server payload</li>
+    </ul>
+    <p><strong>Improved</strong></p>
+    <ul>
+      <li>Refined data flow: parse → edit → save locally → send → result</li>
+      <li>Consistent use of locally approved data as the only source for transmission</li>
+      <li>More predictable and controlled message lifecycle</li>
+    </ul>
+    <p><strong>Data Control</strong></p>
+    <ul>
+      <li>Only user-approved messages can be sent to the server</li>
+      <li>Transmission occurs strictly after explicit user action</li>
+      <li>No automatic or background data transmission introduced</li>
+      <li>Server payload excludes identifiers and non-essential metadata</li>
+    </ul>
+    <p><strong>Notes</strong></p>
+    <ul>
+      <li>This version enables server-side analysis while preserving local-first architecture</li>
+      <li>All processing remains user-initiated and transparent</li>
+    </ul>
 
+    <h2><time datetime="2026-04-11">2026-04-11</time></h2>
     <p><strong>Data Minimization</strong></p>
     <ul>
       <li>Reduced server payload to exclude identifiers</li>
       <li>Limited transmitted data to user-approved message content and essential context only</li>
       <li>Normalized reactions and reply context to remove third-party identifiers</li>
     </ul>
-
     <p><strong>User Control & Transparency</strong></p>
     <ul>
       <li>Formalized local-first architecture: data is stored in the browser before any transmission</li>
@@ -51,7 +75,6 @@
       <li>Data is transmitted only after explicit user action</li>
       <li>No background monitoring or automatic data collection</li>
     </ul>
-
     <p><strong>Legal Alignment</strong></p>
     <ul>
       <li>Updated Privacy Policy to reflect actual data flow and processing model</li>
